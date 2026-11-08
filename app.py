@@ -65,4 +65,4 @@ with st.container(border=True):
             except Exception as err:
                 st.error(f"failed: {err}")
 
-st.caption("files are processed in temp memory and deleted right away. source on [github](https://github.com)")
+st.caption("files are processed in temp memory and deleted right away. source on [github](https://github.com/Al6in-Lab/ihatedocs)")
