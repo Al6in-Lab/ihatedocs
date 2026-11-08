@@ -40,7 +40,7 @@ LABELS = {
 with st.container(border=True):
     picked = st.selectbox("Pick conversion", list(LABELS.values()))
     conv_key = next(k for k, v in LABELS.items() if v == picked)
-    ext = conv_key.split("_to_")
+    ext = conv_key.split("_to_")[0]
 
     uploaded = st.file_uploader(f"Drop your .{ext} file here", type=[ext])
 
